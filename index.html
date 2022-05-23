@@ -1,48 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+/* styles.css | https://yousra10.github.io/Order-summary-card-V2/CSS/styles.css */
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="favicon-32x32s.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+.bg-img {
+  /* width: 350px; */
+  /* height: 500px; */
+  /* border-radius: 5%; */
+  /* line-height: 2; */
+  /* margin-bottom: 90px; */
+  /* margin-top: 90px; */
+  max-width: 350px;
+  border-radius: 20px;
+  line-height: 1.5;
+  note: should be a main;
+  margin: 1rem;
+  overflow: hidden;
+  note: padding wouldn't be on here, !important;;
+}
 
-  <title>Frontend Mentor | Order summary card</title>
+.attribution {
+  /* margin: 30px; */
+  margin: 1rem;
+  note: should be a footer;
+}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  background-repeat: no-repeat;
+}
 
-</head>
-<body>
-<div class="bg-img">
+.challenge {
+  /* width: 30%; */
+  /* font-size: 11px; */
+  /* padding: auto; */
+}
 
-<img class="hero" src="images/illustration-hero.svg" alt="hero-img">
-  <h3>Order Summary</h3>
+p {
+  /* width: 70%; */
+  /* margin: 0 auto; */
+  /* margin-bottom: 10px; */
+  /* padding: 0; */
+  margin: 1rem auto 0;
+  note: Essential to be an interactive element. Cancel needs to be clickable, not a paragraph;
+}
 
-  <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-  device anywhere you like!</p>
-<div class="order-pmt">
-  <img class="icon-music" src="images/icon-music.svg" alt="icon-img">
-<div class="block">
-  <p class="bold">Annual Plan</p>
-  <p class="price">$59.99/year</p>
-</div>
+.hero {
+  /* border-radius: 5% 5% 0 0; */
+  /* width: 350px; */
+  display: block;
+  max-width: 100%;
+}
 
-  <a class="change-link" href="www.google.com">Change</a>
-</div>
+h3 {
+  /* width: 50%; */
+  /* margin: auto; */
+  /* margin-top: 10px; */
+  margin: 0;
+  not: ;
+  note: headings must go in order and start at the highest level possible, eg h1;
+  note: all text in the card should be in one div with padding applied;
+}
 
-<div class="button">
+.order-pmt {
+  /* width: 85%; */
+  /* height: 13%; */
+  /* border-radius: 10%; */
+  /* justify-content: center; */
+  /* margin-bottom: 10px; */
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 1rem 0;
+  align-content: ;
+  align-items: center;
+  padding: 0.8rem;
+  gap: 0.5rem;
+  text-align: left;
+}
 
-</div>
-  <button class="btn" type="button" name="button">Proceed to Payment</button>
+.icon-music {
+  /* margin-top: 10px; */
+  /* margin-left: 5px; */
+  /* padding-right: 20px; */
+  note: decorative images should have empty alt;
+}
 
-  <p>Cancel Order</p>
+.bold {
+  /* width: 150px; */
+  /* text-align: left; */
+}
 
-</div>
-  <div class="attribution">
-    <p class="challenge">Challenge by <a class="challenge" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a class="challenge" href="www.google.com">Yous Ben</a>.</p>
-  </div>
-</body>
-</html>
+.price {
+  /* width: 150px; */
+  /* text-align: left; */
+}
+
+.change-link {
+  /* margin-top: 10px; */
+  /* margin-left: 10px; */
+  note: why is this an anchor tag? What do you expect to happen on click?;
+}
+
+.button {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 20px; */
+  /* margin-top: 20px; */
+  note: this div has no content;
+}
+
+.btn {
+  border: 0;
+  note: Arial font is not used in this challenge. See style guide for fonts;
+  note: why is this a button element? What do you expect to happen on click?;
+}
+
+.card-text-div {
+  padding: 2rem;
+}
